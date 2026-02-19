@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Artifact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Museum Artifact Management</h1>
+        <nav>
+            <a href="index.html">Add Artifact</a>
+            <a href="view_artifacts.html">View Artifacts</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Add New Artifact</h2>
+            <form id="artifact-form">
+                <label for="name">Artifact Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="artifact_id">Artifact ID:</label>
+                <input type="text" id="artifact_id" name="artifact_id" required>
+
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="5" required></textarea>
+
+                <label for="category">Category:</label>
+                <input type="text" id="category" name="category" required>
+
+                <label for="acquisition_date">Acquisition Date:</label>
+                <input type="date" id="acquisition_date" name="acquisition_date" required>
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+
+                <label for="status">Status:</label>
+                <select id="status" name="status" required>
+                    <option value="On Display">On Display</option>
+                    <option value="In Storage">In Storage</option>
+                    <option value="Restoration">Restoration</option>
+                </select>
+
+                <label for="image">Artifact Image:</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+
+                <button type="submit">Add Artifact</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
