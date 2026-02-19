@@ -1,0 +1,19 @@
+CREATE DATABASE artifact_db;
+
+-- Switch to the artifact_db database
+USE artifact_db;
+
+-- Create a table to store artifacts
+CREATE TABLE artifacts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    description TEXT,
+    category VARCHAR(255),
+    acquisition_date DATE,
+    location VARCHAR(255),
+    status VARCHAR(255),
+    image_path VARCHAR(255)
+);
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '12345';
+FLUSH PRIVILEGES;
+Select * from artifacts;
