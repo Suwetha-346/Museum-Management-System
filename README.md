@@ -91,7 +91,6 @@ Install the following:
 2. Run the provided SQL script to create tables.
 
 ---
-
 ### Add MySQL Connector
 
 - Download MySQL Connector/J  
