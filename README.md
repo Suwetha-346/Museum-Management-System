@@ -87,7 +87,7 @@ Install the following:
 
 ###  Database Setup
 
-1. Create database:
+1. Create database using SQL commands
 2. Run the provided SQL script to create tables.
 
 ---
